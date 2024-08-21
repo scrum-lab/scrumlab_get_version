@@ -1,0 +1,25 @@
+name: scrumlab_get_version
+description: Get the Version Name, Version Code, Platform and OS Version, and
+  App ID on iOS and Android.
+version: 1.2.2
+homepage: https://github.com/scrum-lab/scrumlab_get_version
+maintainer: Giuliano Jordao(@giulianojordao)
+
+environment:
+  sdk: ">=2.12.0 <4.0.0"
+  flutter: ">=1.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  package_info: ^2.0.2
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: br.com.scrumlab.scrumlabgetversion
+        pluginClass: ScrumlabGetVersionPlugin
+      ios:
+        package: br.com.scrumlab.scrumlabgetversion
+        pluginClass: ScrumlabGetVersionPlugin
